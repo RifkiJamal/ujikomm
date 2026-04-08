@@ -55,4 +55,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/kelas/{id}', [KelasController::class, 'show']);
     Route::put('/kelas/{id}', [KelasController::class, 'update']);
     Route::delete('/kelas/{id}', [KelasController::class, 'destroy']);
+
+    Route::get('/users', [UserController::class, 'index']);
+Route::get('/kelas', [KelasController::class, 'index']);
+
 });
