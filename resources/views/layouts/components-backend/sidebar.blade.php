@@ -51,24 +51,6 @@
                         </a>
                     </li>
 
-                    <li class="sidebar-item {{ request()->routeIs('quiz.essay.*') ? 'active' : '' }}">
-                        <a class="sidebar-link justify-content-between" href="{{ route('quiz.essay.grading') }}">
-                            <div class="d-flex align-items-center gap-3">
-                                <span class="d-flex position-relative">
-                                    <i class="ti ti-edit"></i>
-                                    @if($pendingEssayCount > 0)
-                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.5rem; padding: 2px 4px;">
-                                            {{ $pendingEssayCount > 9 ? '9+' : $pendingEssayCount }}
-                                        </span>
-                                    @endif
-                                </span>
-                                <span class="hide-menu">Penilaian Esai</span>
-                            </div>
-                            <span class="badge {{ $pendingEssayCount > 0 ? 'bg-warning text-dark' : 'bg-success text-white' }} rounded-pill">
-                                {{ $pendingEssayCount }}
-                            </span>
-                        </a>
-                    </li>
 
                     <li class="nav-small-cap">
                         <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
