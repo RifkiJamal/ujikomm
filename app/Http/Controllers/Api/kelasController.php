@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Kelas;
 use Illuminate\Http\Request;
 
-class KelasController extends Controller
+class kelasController extends Controller
 {
 
     // =====================
